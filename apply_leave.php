@@ -40,14 +40,14 @@ if (isset($_POST['apply'])) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'chandruhulagur123@gmail.com'; // Replace with your Gmail address
-            $mail->Password   = 'qhmq wxjl xyil aczi';   // Replace with your App Password
+            $mail->Username   = 'example@gmail.com'; // Replace with your Gmail address
+            $mail->Password   = 'your app password';   // Replace with your App Password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
             // Recipients
             $mail->setFrom($student['email'], $student['name']);
-            $mail->addAddress('bharatipr2001@gmail.com', 'Manager');
+            $mail->addAddress('example@gmail.com', 'Manager');
 
             // Content
             $mail->isHTML(true);
