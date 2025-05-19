@@ -11,14 +11,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com'; // SMTP server
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'chandruhulagur123@gmail.com';         // Your Gmail address
-    $mail->Password   = 'qhmq wxjl xyil aczi';            // Use Gmail App Password, not regular password
+    $mail->Username   = 'example@gmail.com';         // Your Gmail address
+    $mail->Password   = 'your app password';            // Use Gmail App Password, not regular password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Encryption
     $mail->Port       = 587;
 
     // Recipients
-    $mail->setFrom('chandruhulagur123@gmail.com', 'Mailer Test');
-    $mail->addAddress('bharatipr2001@gmail.com', 'Test User'); // Who to send to
+    $mail->setFrom('example@gmail.com', 'Mailer Test');
+    $mail->addAddress('example@gmail.com', 'Test User'); // Who to send to
 
     // Content
     $mail->isHTML(true);
